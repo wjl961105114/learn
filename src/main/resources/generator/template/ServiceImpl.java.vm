@@ -1,0 +1,23 @@
+package ${package}.${moduleName}.service.impl;
+
+import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+
+
+import ${package}.${moduleName}.dao.${classUpName}Dao;
+import ${package}.${moduleName}.entity.${classUpName}Entity;
+import ${package}.${moduleName}.service.${classUpName}Service;
+
+/**
+ * ${tableComment}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Service("${classLowName}Service")
+public class ${classUpName}ServiceImpl extends ServiceImpl<${classUpName}Dao, ${classUpName}Entity> implements ${classUpName}Service {
+
+
+
+}
