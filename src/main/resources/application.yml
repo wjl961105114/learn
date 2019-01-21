@@ -1,0 +1,33 @@
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 8082
+
+# mysql
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://47.101.154.99:3306/learn?useUnicode=true&amp;characterEncoding=utf8&amp;allowMultiQueries=true&amp;useSSL=false
+        username: root
+        password: 76516051t
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    resources:
+            static-locations: classpath:/static/
+    data:
+        solr:
+#            zk-host: 172.16.12.178:2881,172.16.12.178:2882,172.16.12.178:2883 # 内网
+            zk-host: 47.101.154.99:2881,47.101.154.99:2882,47.101.154.99:2883
+
+
+
+# Mybatis配置
+mybatis:
+    mapperLocations: classpath:mapper/**/*.xml
+
+

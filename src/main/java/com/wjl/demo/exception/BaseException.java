@@ -1,9 +1,9 @@
 package com.wjl.demo.exception;
 
 /**
- * @Description 自定义异常基础
- * @Author 王加伦
- * @Date 2019/1/14
+ *  自定义异常基础
+ * @author 王加伦
+ * @date 2019/1/14
  */
 public class BaseException extends RuntimeException implements java.io.Serializable {
     /**
