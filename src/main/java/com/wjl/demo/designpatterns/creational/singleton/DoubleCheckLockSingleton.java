@@ -9,7 +9,7 @@ package com.wjl.demo.designpatterns.creational.singleton;
  **/
 public class DoubleCheckLockSingleton {
 
-    // Volatile可以保证可见性和原子性
+    // Volatile可以保证可见性和有序性，无法保证原子性
     // 同时保证JVM对指令不会进行重排序
 
     /**
